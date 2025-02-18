@@ -79,13 +79,13 @@ function updateBalance(amount = 0,list=null) {
         incomeValue += amount; 
         incomeSpan.textContent = `₹${incomeValue.toFixed(2)}`;
         if(list){
-            list.style.borderRight='4px solid green';
+            list.style.borderRight='5px solid green';
         }
     } else {
         expenseValue += amount; 
         expenseSpan.textContent = `₹${expenseValue.toFixed(2)}`;
         if(list){
-            list.style.borderRight='4px solid red';
+            list.style.borderRight='5px solid red';
         }
     }
 
