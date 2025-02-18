@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="main">
+        <h1>Expense Tracker</h1>
+        <div id="content">
+            <h4 id="bal">YOUR BALANCE: <span class="spantag">₹0.00</span></h4>
+            <div id="expenses">
+                <h4>INCOME<span id="income" class="spantag income">₹0.00</span></h4>
+                <h4>Expense<span id="expense" class="spantag expense">₹0.00</span></h4>
+            </div>
+            <h4 class="underline">History</h4>
+            <ul id="task-list"></ul>
+
+            <div>
+                <h2 class="underline">Add new transaction</h2>
+                <p>Text</p>
+                <input type="text" name="Text" id="textbox" placeholder="Enter text...">
+                <p>Amount (negative-expense,positive-income)</p>
+                <input type="number" name="amount" id="amountbox" placeholder="Enter amount...">
+                <button onclick="addtask()">Add transaction</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
